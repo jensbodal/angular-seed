@@ -8,10 +8,10 @@
     "start": "node src/server/app.js"
   },
   "dependencies": {
-    "bower": "^1.7.9",
     "express": "^4.14.0"
   },
   "devDependencies": {
+    "bower": "^1.7.9",
     "grunt": "^1.0.1",
     "grunt-angular-file-loader": "^1.2.0",
     "grunt-contrib-watch": "^1.0.0",
