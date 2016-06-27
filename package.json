@@ -12,12 +12,14 @@
     "start": "node src/server/app.js"
   },
   "dependencies": {
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "grunt-nodemon": "^0.4.2"
   },
   "devDependencies": {
     "bower": "^1.7.9",
     "grunt": "^1.0.1",
     "grunt-angular-file-loader": "^1.2.0",
+    "grunt-concurrent": "^2.3.0",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-sass": "^1.2.0",
     "grunt-wiredep": "^3.0.1",

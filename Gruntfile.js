@@ -11,10 +11,7 @@ module.exports = function(grunt) {
         ignorePath: /^(\/|\.+(?!\/[^\.]))+\.+/ 
       }
     },
-    watch: {
-      file: ['bower_components/*'],
-      tasks: ['wiredep']
-    },
+    
     angularFileLoader: {
       options: {
         scripts: ['src/client/app/**/*.js'],
@@ -24,21 +21,52 @@ module.exports = function(grunt) {
         src: ['src/client/index.html']
       }
     },
+    
+    nodemon: {
+      dev: {
+        script: 'src/server/app.js'
+      }
+    },
+
     sass: {
       options: {
         sourceMap: true
       },
       dist: {
         files: {
-          'src/client/styles/main.css': 'src/client/styles/main.scss'
+          'src/client/styles/main.css': 'src/client/scss/main.scss'
         }
       }
+    },
+
+    watch: {
+      bower: {
+        files: ['bower.json'],
+        tasks: ['wiredep']
+      },
+      sass: {
+        files: ['src/client/scss/**/*.scss'],
+        tasks: ['sass']
+      }
+    },
+
+    concurrent: {
+      options: {
+        logConcurrentOutput: true,
+      },
+      default: [
+        'nodemon',
+        'watch'
+      ]
     }
+
   });
 
+  // concurrent tasks most go last   
   grunt.registerTask('default', [
     'wiredep',
     'angularFileLoader',
-    'watch'
+    'sass',
+    'concurrent:default'
   ]);
 };
