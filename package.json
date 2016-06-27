@@ -1,4 +1,7 @@
 {
+  "author": "Jens Bodal",
+  "license": "ISC",
+  "keywords": [],
   "name": "angular-seed",
   "version": "1.0.0",
   "description": "Angular seed for nodejs, express, sass, angular material",
@@ -24,8 +27,5 @@
     "grunt-sass": "^1.2.0",
     "grunt-wiredep": "^3.0.1",
     "load-grunt-tasks": "^3.5.0"
-  },
-  "author": "Jens Bodal",
-  "license": "ISC",
-  "keywords": []
+  }
 }
