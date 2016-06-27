@@ -1,0 +1,23 @@
+{
+  "name": "angular_seed",
+  "version": "1.0.0",
+  "description": "Angular seed for nodejs, express, sass, angular material",
+  "main": "src/server/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server/app.js"
+  },
+  "dependencies": {
+    "bower": "^1.7.9",
+    "express": "^4.14.0"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-angular-file-loader": "^1.2.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-wiredep": "^3.0.1"
+  },
+  "author": "Jens Bodal",
+  "license": "ISC",
+  "keywords": []
+}
