@@ -23,6 +23,8 @@
 <!-- endbower -->
 <!-- endbuild -->
 
+<link rel="stylesheet" href="/src/client/styles/main.css" />
+
 <!-- build:css styles/app.css -->
 <!-- inject:css -->
 <!-- endinject -->
@@ -30,7 +32,10 @@
 </head>
 
 <body>
-<div ui-view="appNameMain" class="appNameMain"></div>
+<div layout="row">
+    <div flex="20">Left side</div>
+    <div flex="80" ui-view="appNameMain" class="appName-main"></div>
+</div>
 
 <!-- build:js js/lib.js -->
 <!-- bower:js -->

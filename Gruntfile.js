@@ -1,9 +1,8 @@
 module.exports = function(grunt) {
+  'use strict';
 
-  grunt.loadNpmTasks('grunt-wiredep');
-  grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-angular-file-loader');
-
+  require('load-grunt-tasks')(grunt);
+  
   grunt.initConfig({
     wiredep: {
       task: {
@@ -24,10 +23,22 @@ module.exports = function(grunt) {
       your_target: {
         src: ['src/client/index.html']
       }
+    },
+    sass: {
+      options: {
+        sourceMap: true
+      },
+      dist: {
+        files: {
+          'src/client/styles/main.css': 'src/client/styles/main.scss'
+        }
+      }
     }
   });
 
-  grunt.registerTask('default', ['wiredep']);
-  grunt.registerTask('default', ['angularFileLoader']);
-  grunt.registerTask('changes', ['watch']);
+  grunt.registerTask('default', [
+    'wiredep',
+    'angularFileLoader',
+    'watch'
+  ]);
 };
