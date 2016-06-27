@@ -1,5 +1,5 @@
 {
-  "name": "angular_seed",
+  "name": "angular-seed",
   "version": "1.0.0",
   "description": "Angular seed for nodejs, express, sass, angular material",
   "main": "src/server/app.js",
