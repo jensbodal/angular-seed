@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('appName.home')
+    .module('doneYet.home')
     .config(HomeConfig);
 
     HomeConfig.$inject = [ 
@@ -11,17 +11,19 @@
     ];
 
     function HomeConfig($stateProvider, $urlRouterProvider) {
-      $urlRouterProvider.otherwise('/');
       $stateProvider 
-        .state('homeState', {
+        .state('homePage', {
           url: '/',
           views: {
-            'appNameMain': {
+            'doneYetContent': {
               templateUrl: 'app/home/home.template.html',
               controller: 'HomeController',
               controllerAs: 'vm'
             }
           }
-        })
+        });
+     
+      // all unknown routes go to homepage
+      $urlRouterProvider.otherwise('/');
     }
 })();

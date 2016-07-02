@@ -1,7 +1,7 @@
 (function() {
   'use strict';
 
-  angular.module('doneYet.home', 
+  angular.module('doneYet.layout', 
     [
       'doneYet.core'
     ]

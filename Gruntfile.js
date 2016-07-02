@@ -47,6 +47,10 @@ module.exports = function(grunt) {
       sass: {
         files: ['src/client/scss/**/*.scss'],
         tasks: ['sass']
+      },
+      angularFileLoader: {
+        files: ['src/client/app/**/*.js'],
+        tasks: ['angularFileLoader']
       }
     },
 

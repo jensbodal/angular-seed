@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('appName.core', [
+    .module('doneYet.core', [
       'ui.router'
     ]);
 })();

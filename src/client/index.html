@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This template is based on the Hottowel starter app: https://github.com/johnpapa/generator-hottowel -->
-<html ng-app="appName">
+<html ng-app="doneYet">
 
 <head>
 <style>
@@ -32,9 +32,7 @@
 </head>
 
 <body>
-<div layout="row">
-    <div flex="20">Left side</div>
-    <div flex="80" ui-view="appNameMain" class="appName-main"></div>
+    <div class="doneYet-main" ui-view="doneYetContent"></div>
 </div>
 
 <!-- build:js js/lib.js -->
@@ -51,8 +49,9 @@
 
 <!-- build:js js/lib.js -->
 <!-- angular -->
+<script src="src/client/app/layout/layout.module.js" type="text/javascript"></script>
+<script src="src/client/app/layout/layout.route.js" type="text/javascript"></script>
 <script src="src/client/app/home/home.module.js" type="text/javascript"></script>
-<script src="src/client/app/home/home.route.js" type="text/javascript"></script>
 <script src="src/client/app/home/home.controller.js" type="text/javascript"></script>
 <script src="src/client/app/core/core.module.js" type="text/javascript"></script>
 <script src="src/client/app/app.module.js" type="text/javascript"></script>

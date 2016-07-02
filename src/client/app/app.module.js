@@ -2,10 +2,11 @@
   'use strict';
 
   angular.module(
-    'appName', 
+    'doneYet', 
     [
-      'appName.core',
-      'appName.home'
+      'doneYet.core',
+      'doneYet.home',
+      'doneYet.layout'
     ]
   );
 
