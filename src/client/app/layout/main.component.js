@@ -11,19 +11,10 @@
 
   function getTemplate() {
     return `
-      <div layout="column">
-        <div class="header-container" flex>
-          <angular-seed-header></angular-seed-header>
+        <angular-seed-header></angular-seed-header>
+        <div class="main-container">
+          <angular-seed-homepage></angular-seed-homepage>
         </div>
-        <div layout="row" flex>
-          <div class="left-nav-container" flex>
-            <angular-seed-left-nav></angular-seed-left-nav>
-          </div>
-          <div class="main-container" flex>
-            <angular-seed-homepage></angular-seed-homepage>
-          </div>
-        </div>
-      </div>
     `;
   }
 

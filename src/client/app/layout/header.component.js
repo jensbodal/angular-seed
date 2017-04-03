@@ -11,7 +11,12 @@
 
   function getTemplate() {
     return `
-      Angular Seed Header
+      <md-toolbar layout="row">
+		<angular-seed-left-nav></angular-seed-left-nav>
+        <h2 class="md-toolbar-tools">
+          <span>Angular Seed Header</span>
+        </h2>
+      </md-toolbar>
     `;
   }
 
