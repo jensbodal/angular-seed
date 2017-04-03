@@ -2,7 +2,8 @@
   'use strict';
 
   angular
-    .module('myApp.core', [
-      'ui.router'
+    .module('angularSeed.core', [
+      'ui.router',
+      'ngMaterial'
     ]);
 })();

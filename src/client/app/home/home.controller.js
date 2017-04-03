@@ -2,8 +2,12 @@
   'use strict';
 
   angular
-    .module('myApp.home')
-    .controller('HomeController', HomeController);
+    .module('angularSeed.home')
+    .component('angularSeedHomepage', {
+      controller: HomeController,
+      controllerAs: 'vm',
+      templateUrl: 'app/home/home.template.html'
+    });
 
   HomeController.$inject = [
   ];

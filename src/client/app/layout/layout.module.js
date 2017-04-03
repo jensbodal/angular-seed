@@ -1,9 +1,9 @@
 (function() {
   'use strict';
 
-  angular.module('myApp.layout',
+  angular.module('angularSeed.layout',
     [
-      'myApp.core'
+      'angularSeed.core'
     ]
   );
 

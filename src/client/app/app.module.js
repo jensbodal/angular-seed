@@ -2,11 +2,11 @@
   'use strict';
 
   angular.module(
-    'myApp',
+    'angularSeed',
     [
-      'myApp.core',
-      'myApp.home',
-      'myApp.layout'
+      'angularSeed.core',
+      'angularSeed.home',
+      'angularSeed.layout'
     ]
   );
 

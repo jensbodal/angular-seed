@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('myApp.layout')
+    .module('angularSeed.layout')
     .config(LayoutConfig);
 
     LayoutConfig.$inject = [
@@ -12,23 +12,11 @@
 
     function LayoutConfig($stateProvider, $urlRouterProvider) {
       $stateProvider
-        .state('myApp', {
+        .state('angularSeed', {
           url: '/',
           views: {
-            'myAppHeader': {
-              templateUrl: 'app/header/header.template.html',
-              controller: 'HeaderController',
-              controllerAs: 'headerVm'
-            },
-            'myAppLeft': {
-              templateUrl: 'app/home/home.template.html',
-              controller: 'LeftController',
-              controllerAs: 'leftVm'
-            },
-            'myAppContent': {
-              templateUrl: 'app/home/home.template.html',
-              controller: 'HomeController',
-              controllerAs: 'vm'
+            'angularSeedMain': {
+              component: 'angularSeedMain'
             }
           }
         });
