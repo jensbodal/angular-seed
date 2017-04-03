@@ -2,37 +2,37 @@
   'use strict';
 
   angular
-    .module('doneYet.layout')
+    .module('myApp.layout')
     .config(LayoutConfig);
 
-    LayoutConfig.$inject = [ 
+    LayoutConfig.$inject = [
       '$stateProvider',
       '$urlRouterProvider'
     ];
 
     function LayoutConfig($stateProvider, $urlRouterProvider) {
-      $stateProvider 
-        .state('doneYet', {
+      $stateProvider
+        .state('myApp', {
           url: '/',
           views: {
-            'doneYetHeader': {
+            'myAppHeader': {
               templateUrl: 'app/header/header.template.html',
               controller: 'HeaderController',
               controllerAs: 'headerVm'
             },
-            'doneYetLeft': {
+            'myAppLeft': {
               templateUrl: 'app/home/home.template.html',
               controller: 'LeftController',
               controllerAs: 'leftVm'
             },
-            'doneYetContent': {
+            'myAppContent': {
               templateUrl: 'app/home/home.template.html',
               controller: 'HomeController',
               controllerAs: 'vm'
             }
           }
         });
-     
+
       // all unknown routes go to homepage
       $urlRouterProvider.otherwise('/');
     }

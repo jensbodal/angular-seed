@@ -12,10 +12,12 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "grunt default"
+    "start": "grunt default",
+    "postinstall": "bower install"
   },
   "dependencies": {
     "express": "^4.14.0",
+    "global": "^4.3.1",
     "grunt-nodemon": "^0.4.2"
   },
   "devDependencies": {

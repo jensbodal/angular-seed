@@ -1,9 +1,9 @@
 (function() {
   'use strict';
 
-  angular.module('doneYet.home', 
+  angular.module('myApp.home',
     [
-      'doneYet.core'
+      'myApp.core'
     ]
   );
 

@@ -2,9 +2,9 @@
   'use strict';
 
   angular
-    .module('doneYet.home')
+    .module('myApp.home')
     .controller('HomeController', HomeController);
-  
+
   HomeController.$inject = [
   ];
 

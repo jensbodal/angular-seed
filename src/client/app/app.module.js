@@ -2,11 +2,11 @@
   'use strict';
 
   angular.module(
-    'doneYet', 
+    'myApp',
     [
-      'doneYet.core',
-      'doneYet.home',
-      'doneYet.layout'
+      'myApp.core',
+      'myApp.home',
+      'myApp.layout'
     ]
   );
 
